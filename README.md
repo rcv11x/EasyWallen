@@ -2,6 +2,8 @@
 
 🖼️ Script para instalar, actualizar y configurar [waywallen](https://github.com/waywallen/waywallen), el gestor de fondos dinámicos para Linux que sustituye al antiguo `wallpaper-engine-kde-plugin`.
 
+![Menú del script](assets/script_menu.png)
+
 Hacerlo a mano son tres descargas de tres repos distintos, más averiguar dónde tienes la librería de Steam. Esto lo resuelve en una opción de menú.
 
 Probado en **KDE Plasma 6** (CachyOS y Fedora) y en **Niri** (Garuda). GNOME está contemplado pero sin probar.
@@ -73,6 +75,7 @@ No hace falta abrirlo nunca. Solo se necesitan sus archivos, por dos motivos: mu
 
 **4. Añade la librería** en **Wallpapers → Add Library → Wallpaper_engine**. Ahí hay que dar la **raíz de tu librería de Steam**, es decir la carpeta que contiene `steamapps`, algo como `/mnt/juegos/SteamLibrary`. Si le das la carpeta `431960` no escanea nada, que es el error habitual. La opción 4 del menú te busca esa ruta y te la copia al portapapeles.
 
+![WayWallen](assets/waywallen.png)
 ---
 
 ## Si algo no va
