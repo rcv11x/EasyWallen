@@ -4,7 +4,7 @@
 
 Hacerlo a mano son tres descargas de tres repos distintos, más averiguar dónde tienes la librería de Steam. Esto lo resuelve en una opción de menú.
 
-Probado en **KDE Plasma 6** y en **Niri**. GNOME está contemplado pero sin probar.
+Probado en **KDE Plasma 6** (CachyOS y Fedora) y en **Niri** (Garuda). GNOME está contemplado pero sin probar.
 
 ## Qué hace
 
@@ -34,19 +34,30 @@ El menú usa [gum](https://github.com/charmbracelet/gum) si lo tienes, y si no t
 1. Opción **1** del menú.
 2. Deja que reinicie plasmashell cuando te lo pida.
 3. **Click derecho en el escritorio → Configurar el escritorio y el fondo de pantalla → Tipo de fondo de pantalla → Waywallen.**
+4. Cuando te pregunte si lo deja en el arranque automático, dile que sí.
 
 El paso 3 no es opcional. Instalar waywallen no cambia tu fondo por sí solo, y si te lo saltas parece que no funciona nada.
+
+El paso 4 tampoco conviene saltárselo: waywallen es quien pinta el fondo, así que si no arranca con la sesión, al encender el ordenador no verás nada hasta que lo abras a mano.
 
 ## Si usas Niri, Hyprland, Sway o COSMIC
 
 1. Opción **1** del menú. Te dirá que no hace falta integración aparte, y es correcto: el AppImage ya trae dentro el cliente layer-shell y lo abre él solo.
-2. Haz que waywallen arranque con la sesión. En niri, en tu `config.kdl`:
+2. Haz que waywallen arranque con la sesión, según lo que uses:
 
    ```
-   spawn-at-startup "waywallen"
+   niri      ~/.config/niri/config.kdl      spawn-at-startup "waywallen"
+   Sway      ~/.config/sway/config          exec waywallen
+   Hyprland  ~/.config/hypr/hyprland.conf   exec-once = waywallen
    ```
+
+   En Sway usa `exec` y no `exec_always`, o tendrás una instancia nueva cada vez que recargues la configuración. Y si estás en Hyprland 0.55 o más nuevo con la configuración en Lua, la línea va en tu `hyprland.lua`; la sintaxis está en su wiki.
 
 No lances `waywallen-layer-shell` por tu cuenta o tendrás dos clientes peleándose.
+
+## Actualizar
+
+Vuelve a lanzar el script y dale a la opción 1. Compara versiones y solo descarga lo que tenga novedad, así que puedes darle las veces que quieras. Cuando hay algo nuevo te aparece un 🔄 en el menú, al lado de la opción que toca.
 
 ---
 
@@ -95,5 +106,7 @@ Lo primero, la opción **i** del menú: te dice qué tienes instalado, si waywal
 El software es de [waywallen](https://github.com/waywallen/waywallen) y de [catsout](https://github.com/catsout/wallpaper-engine-kde-plugin), que empezó todo esto. Esto solo es un script que te ahorra los pasos.
 
 Gracias a thom por probarlo en Niri.
+
+Hay partes escritas con ayuda de (Opus 5) y probado a mano en CachyOS con KDE Plasma 6, Fedora KDE y Garuda con Niri.
 
 Dudas por Discord: @rcv11x · Licencia MIT
