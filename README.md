@@ -55,12 +55,6 @@ El paso 4 tampoco conviene saltárselo: waywallen es quien pinta el fondo, así 
 
 No lances `waywallen-layer-shell` por tu cuenta o tendrás dos clientes peleándose.
 
-## Actualizar
-
-Vuelve a lanzar el script y dale a la opción 1. Compara versiones y solo descarga lo que tenga novedad, así que puedes darle las veces que quieras. Cuando hay algo nuevo te aparece un 🔄 en el menú, al lado de la opción que toca.
-
----
-
 ## Fondos en vídeo
 
 Lo más rápido, y no necesita Steam ni Wallpaper Engine. Metes tus mp4 o webm en una carpeta y en waywallen vas a **Wallpapers → Add Library → Video**.
@@ -97,6 +91,10 @@ Lo primero, la opción **i** del menú: te dice qué tienes instalado, si waywal
 
 **¿Funciona en la pantalla de bloqueo?** En Niri, Hyprland y Sway no. El bloqueo dibuja su propia capa por encima y tapa el fondo; es una limitación del protocolo, no de waywallen.
 
+## Actualizar
+
+Vuelve a lanzar el script y dale a la opción 1. Compara versiones y solo descarga lo que tenga novedad, así que puedes darle las veces que quieras. Cuando hay algo nuevo te aparece un 🔄 en el menú, al lado de la opción que toca.
+
 ## Sin menú
 
 `--sync` `--check` `--plugin` `--steam` `--open` `--restart` `--status` `--remove`, y `--force` para rehacer la instalación aunque esté al día.
@@ -107,6 +105,6 @@ El software es de [waywallen](https://github.com/waywallen/waywallen) y de [cats
 
 Gracias a thom por probarlo en Niri.
 
-Hay partes escritas con ayuda de (Opus 5) y probado a mano en CachyOS con KDE Plasma 6, Fedora KDE y Garuda con Niri.
+Escrito con ayuda de Claude (Opus 5) y probado a mano en CachyOS con KDE Plasma 6, Fedora KDE y Garuda con Niri.
 
 Dudas por Discord: @rcv11x · Licencia MIT
