@@ -75,7 +75,7 @@ No hace falta abrirlo nunca. Solo se necesitan sus archivos, por dos motivos: mu
 
 **4. Añade la librería** en **Wallpapers → Add Library → Wallpaper_engine**. Ahí hay que dar la **raíz de tu librería de Steam**, es decir la carpeta que contiene `steamapps`, algo como `/mnt/juegos/SteamLibrary`. Si le das la carpeta `431960` no escanea nada, que es el error habitual. La opción 4 del menú te busca esa ruta y te la copia al portapapeles.
 
-![WayWallen](assets/waywallen.png)
+![WayWallen](assets/waywallen.webp)
 ---
 
 ## Si algo no va
